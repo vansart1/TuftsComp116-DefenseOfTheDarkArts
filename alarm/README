@@ -1,0 +1,5 @@
+ALARM Security Engine
+
+The ALARM Security Engine is a tool to detect various scans of the network, plaintext passwords and credit cards, and basic Cross Site Scripting (XSS) attaks. It works by capturing packets from an interface and scanning them for various threats. The ALARM Security Engine searches for Xmass, NULL, or FIN scans as well as other nmap scans that contain the string "nmap" as their signature. This tool also detects if a password or credit card numbers were leaked in plaintext format. There are some false positives for the credit card number and password scans when doing regular internet surfing. Finally, this tool also checks for basic cross site scripting (XSS) in http (port 80) GET and POST requests. 
+
+NOTE: Michael Silverblatt and I collaborated on this project. 
